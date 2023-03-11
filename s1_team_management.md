@@ -2,7 +2,9 @@
 
 ## Team Formation
 
-**Cassandra Sehic** - role/strength+interests 
+**Cassandra Sehic** - strengths/interests: has experience in project management, frontend development and user experience. 
+
+Roles: Project Management, Web Accessibility and Internationalization, and Legal Research
 
 **Julian Lucher** - role/strength+interests
 
@@ -12,9 +14,16 @@ We will seek to solve conflicts through consensus. We re motivated to make timel
 
 ## Task Assignment
 
-Tasks will be assigned based on our strengths and interests.
+Tasks will be assigned based on our roles.
 
-An initial assignment might, for example, be drawing a wireframe to have an idea of the design of the site. This would be assigned to the Designer/Frontend role.
+**Intial Tasks:**
+
+Setup GitHub Workflow with columns: Cassandra
+
+Research Web Accessibility and Internationalization: Cassandra
+
+Research Website Legality: Cassandra
+
 
 ## Repository Collaboration
 
@@ -24,9 +33,7 @@ All team members will be collaborators on the CEO's forked repository. We will u
 
 We will be working in sprints, and merging, reflecting, and assesing at the end of each sprint. The tasks within a sprint will be placed into a GitHub project management workflow, and will be assigned to a collaborator. Our sprints are 1-2 weeks in length each.
 
-## Reflection
 
-## Retrospective Report
 
 
 
