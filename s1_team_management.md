@@ -8,7 +8,9 @@ Roles: Project Management, Web Accessibility and Internationalization, and Legal
 
 **Julian Lucher** - role/strength+interests
 
-Third Member - role/strength+interests
+**David Felix** - ddf26@njit.edu - strength/interests: Has experience in front-end development and client/server programming. Has interest in SEO optimization.
+
+Roles: SEO Research, Testing and Quality Assurance, Team Improvement Plan
 
 We will seek to solve conflicts through consensus. We re motivated to make timely decisions, do to this being a graded assignment. We will communicate in person and through discord, and with comments on GitHub.
 
@@ -16,7 +18,7 @@ We will seek to solve conflicts through consensus. We re motivated to make timel
 
 Tasks will be assigned based on our roles.
 
-**Intial Tasks:**
+**Initial Tasks:**
 
 Setup GitHub Workflow with columns: Cassandra
 
@@ -24,6 +26,11 @@ Research Web Accessibility and Internationalization: Cassandra
 
 Research Website Legality: Cassandra
 
+Research SEO Implementation and Testing: David
+
+Analyze Requirements for Testing and Quality Assurance: David
+
+Define Team's Vision for Team Improvement Plan: David
 
 ## Repository Collaboration
 
