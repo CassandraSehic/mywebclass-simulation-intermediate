@@ -2,7 +2,7 @@
 
 ## Team Formation
 
-**Cassandra Sehic** - strengths/interests: has experience in project management, frontend development and user experience. 
+**Cassandra Sehic** - cns27@njit.edu - strengths/interests: has experience in project management, frontend development and user experience. 
 
 Roles: Project Management, Web Accessibility and Internationalization, and Legal Research
 
