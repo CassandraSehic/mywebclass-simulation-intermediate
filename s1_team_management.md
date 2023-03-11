@@ -6,7 +6,7 @@
 
 Roles: Project Management, Web Accessibility and Internationalization, and Legal Research
 
-**Julian Lucher** - jll38@njit.edu - strength/interests: Has experience in user experience and full-stack development
+**Julian Lechner** - jll38@njit.edu - strength/interests: Has experience in user experience and full-stack development
 
 **David Felix** - ddf26@njit.edu - strength/interests: Has experience in front-end development and client/server programming. Has interest in SEO optimization.
 
