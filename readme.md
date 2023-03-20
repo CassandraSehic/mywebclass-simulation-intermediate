@@ -44,6 +44,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 4. TBD
 
 # Project Setup
+[Installation Instructions](installation.md)
+
 ## I am giving you my code; howevever, you should replace what I did with your own work.  Do Not Turn my own code back into me
 
 - [GitHubPages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
