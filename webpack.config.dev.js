@@ -73,6 +73,9 @@ module.exports = {
           // filename: 'fonts/[name]-[hash][ext][query]'
           filename: 'fonts/[name][ext][query]'
         }
+      },{
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(scss)$/,

@@ -23,7 +23,7 @@ window.addEventListener('resize', () => {
 
 function createPrivacyModal () {
   const modalHtml = `
-    <div class="modal fade" id="privacyModal" tabindex="-1">
+    <div class="modal opacity-0" id="privacyModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -35,8 +35,8 @@ function createPrivacyModal () {
             <p>Do you agree to our Privacy Policy?</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Disagree</button>
-            <button type="button" class="btn btn-primary" id="agreeButton">Agree</button>
+            <button type="button" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-gray-600 text-white hover:bg-gray-700" data-bs-dismiss="modal">Disagree</button>
+            <button type="button" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600" id="agreeButton">Agree</button>
           </div>
         </div>
       </div>

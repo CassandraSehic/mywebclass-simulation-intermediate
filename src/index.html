@@ -22,94 +22,76 @@
 
 </head>
 
-<body class="pt-5">
-<div class="container-fluid">
-    <header role="banner" class="fixed-top">
-        <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">MyWebClass.org</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Toggle navigation</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">MyWebClass.org</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-black hover:border-black">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="content.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+              Content Template
+            </a>
+            
+          </div>
+
+        </div>
+      </nav>
     <main>
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg ">
-                <div class="col-lg-7 p-3 p-lg-3 pt-lg-1">
-                    <h1 class="display-6 fw-bold lh-1">Revolutionize your teaching</h1>
-                    <p class="lead">Empower your students with cutting-edge software engineering skills. Join
+        <div class="container mx-auto my-10 sm:px-4">
+            <div class="flex flex-wrap p-6 pb-0 lg:pe-0 lg:pt-0 items-center rounded-3 border shadow-lg ">
+                <div class="lg:w-3/5 pr-4 pl-4 p-6 lg:p-4 lg:pt-1">
+                    <h1 class="text-4xl leading-normal">Revolutionize your teaching</h1>
+                    <p class="text-xl font-light">Empower your students with cutting-edge software engineering skills. Join
                         MyWebClass and discover advanced technologies that will transform your teaching and their
                         learning journey.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start
+                    <div class="d-grid gap-2 md:flex md:justify-start mb-4 lg:mb-4">
+                        <button type="button" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded  no-underline bg-green-500 text-white hover:green-600 py-3 px-4 leading-tight text-xl px-4 md:me-2 fw-bold">Start
                             Here
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <img class="rounded-lg-3 img-fluid" src="assets/images/teacher.gif"
+                <div class="lg:w-1/3 pr-4 pl-4 lg:mx-1/6 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3 max-w-full h-auto" src="assets/images/teacher.gif"
                          alt="a teacher with students" width="720">
                 </div>
             </div>
         </div>
     </main>
-    <footer class="py-5 container">
-        <div class="row">
-            <div class="col">
-                <h5>About Us</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                    <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted">Our
-                        Story</a>
-                    </li>
 
-                    <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html">Privacy
-                        Policy</a>
-                    </li>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-3 ">
-                <h5>Share on Social Media</h5>
-                <ul class="nav">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-linkedin me-2"></i></a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-twitter me-2"></i></a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-facebook me-2"></i></a></li>
-                </ul>
-            </div>
-
-
-            <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
-                </form>
-            </div>
+    <!--Footer-->
+    <footer class=" bg-white rounded-lg shadow m-4 light:bg-gray-800">
+        <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-800 sm:text-center dark:text-gray-800">© 2023 MyWebClass.org <br/>All Rights Reserved.
+        </span>
+        <form class="text-sm text-gray-800 sm:text-center dark:text-gray-800">Subscribe to our newsletter
+             <input id='newsletter-input' type="text" class="px-4 py-3" placeholder="Email address">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Subscribe
+              </button>
+            </form>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Our Story</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Share</a>
+            </li>
+        </ul>
         </div>
     </footer>
-</div>
 </body>
 
 </html>
