@@ -5,6 +5,12 @@ FROM --platform=$BUILDPLATFORM node:latest AS builder
 # Set the working directory to /app
 WORKDIR /app
 
+# Install libimagequant
+RUN apt-get update && \
+    apt-get install -y libimagequant0 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
 
