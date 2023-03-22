@@ -32,7 +32,7 @@ jobs:
       run: npx playwright test tests/legal
 
     - name: Generate Lighthouse Report
-        run: |
+      run: |
           lighthouse http://localhost:3000 --output html --output-path ./test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
