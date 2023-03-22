@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run:
+        run: |
           npx playwright install
           npx playwright test tests/seo
 
