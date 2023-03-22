@@ -23,24 +23,24 @@ window.addEventListener('resize', () => {
 
 function createPrivacyModal () {
   const modalHtml = `
-    <div class="modal fade" id="privacyModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Privacy Policy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>
-            <p>Do you agree to our Privacy Policy?</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Disagree</button>
-            <button type="button" class="btn btn-primary" id="agreeButton">Agree</button>
-          </div>
-        </div>
-      </div>
-    </div>
+   <div class="modal" id="privacyModal">
+  <div class="modal-background" data-close="modal"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Privacy Policy</p>
+      <button class="delete" data-close="modal"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>
+      <p>Do you agree to our Privacy Policy?</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-secondary" data-close="modal">Disagree</button>
+      <button class="button is-primary" id="agreeButton">Agree</button>
+    </footer>
+  </div>
+</div>
+
   `
 
   // Append the modal HTML to the body of the document
