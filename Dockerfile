@@ -6,10 +6,8 @@ FROM --platform=$BUILDPLATFORM node:latest AS builder
 WORKDIR /app
 
 # Install libimagequant-dev
-RUN apt-get update && \
-    apt-get install -y libimagequant-dev && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN npm install -g pngquant-bin
+
 
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
