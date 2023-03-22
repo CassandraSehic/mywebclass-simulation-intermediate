@@ -5,9 +5,9 @@ FROM --platform=$BUILDPLATFORM node:latest AS builder
 # Set the working directory to /app
 WORKDIR /app
 
-# Install libimagequant
+# Install libimagequant-dev
 RUN apt-get update && \
-    apt-get install -y libimagequant0 && \
+    apt-get install -y libimagequant-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
