@@ -1,5 +1,4 @@
-const { chromium } = require('playwright');
-const { test, expect } = require('@playwright/test');
+const { chromium, test, expect } = require('@playwright/test');
 
 test.describe('Page Load Speed Test', () => {
   test('should load the page in less than 3 seconds', async ({ page }) => {
