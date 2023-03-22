@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "pngquant-bin": "^8.0.1"
+    "pngquant-bin": "^8.0.1",
+    "tailwind": "^4.0.0"
   }
 }
