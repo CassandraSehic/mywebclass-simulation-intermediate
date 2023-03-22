@@ -45,7 +45,6 @@
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-pngquant": "^9.0.2",
     "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^7.0.2",
@@ -60,6 +59,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6"
+    "@popperjs/core": "^2.11.6",
+    "pngquant": "^4.1.0"
   }
 }
