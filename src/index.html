@@ -110,6 +110,33 @@
         </div>
     </footer>
 </div>
+  <!-- Add the cookie banner at the end of the body -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #eee; padding: 1rem; text-align: center; z-index: 100;">
+    <p>This website uses cookies to improve your experience. <button data-cookie-type="opt-out">Opt-out of cookies</button></p>
+  </div>
+
+  <script>
+    // Add JavaScript code to handle the opt-out button click
+    const optOutButton = document.querySelector('#cookie-banner button[data-cookie-type="opt-out"]');
+    optOutButton.addEventListener('click', () => {
+      // Save the user's preference in a cookie or local storage
+      // In this example, we use local storage
+      localStorage.setItem('userOptedOut', 'true');
+      
+      // Hide the cookie banner
+      document.getElementById('cookie-banner').style.display = 'none';
+    });
+
+    // Check the user's preference when the page loads
+    const userOptedOut = localStorage.getItem('userOptedOut');
+    if (userOptedOut === 'true') {
+      // Hide the cookie banner
+      document.getElementById('cookie-banner').style.display = 'none';
+
+      // Add code to disable cookies on your website
+      // This will depend on the specific implementation of cookies on your website
+    }
+  </script>
 </body>
 
 </html>
