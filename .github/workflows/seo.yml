@@ -32,7 +32,7 @@ jobs:
         run: npx playwright test tests/seo
 
       - name: Generate Lighthouse Report
-        run: npm run lighthouse http://localhost:3000 --output html --output-path lighthouse-report.html
+        run: npm run test:lighthouse
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
