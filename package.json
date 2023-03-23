@@ -34,7 +34,8 @@
   },
   "homepage": "https://github.com/NJIT-WIS/mywebclass#readme",
   "devDependencies": {
-    "@playwright/test": "^1.31.1",
+    "@playwright/test": "1.32.0",
+    "@axe-core/playwright": "4.6.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "bootstrap": "^5.2.3",
@@ -47,6 +48,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^2.7.2",
+    "node-fetch": "3.3.1",
     "postcss-loader": "^7.0.2",
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
