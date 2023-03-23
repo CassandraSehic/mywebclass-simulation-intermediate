@@ -24,9 +24,7 @@ jobs:
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
       - name: Start the application
-        run: |
-          export DISPLAY=:1
-          npm run start & npx wait-on http://localhost:3000
+        run: npm run start & npx wait-on http://localhost:3000
 
       - name: Run Tests
         run: npx playwright test tests/seo
