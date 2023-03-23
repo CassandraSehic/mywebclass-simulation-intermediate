@@ -14,7 +14,7 @@ test('W3C validation', async ({ page }) => {
   });
   const validationResult = await response.text();
   // const errorCount = validationResult.messages.filter(message => message.type === 'error').length;
-  const errorCount = (validationResult.includes("Error") ? 1 : 0)
+  const errorCount = (validationResult.includes("error") ? 1 : 0)
   await expect(errorCount).toBe(0);
 
 });

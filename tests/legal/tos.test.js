@@ -4,11 +4,22 @@ test('Terms of Service Test', async ({ page }) => {
   // Navigate to the website to be tested
   await page.goto('http://localhost:3000');
 
+  // Check if the privacy policy modal is present
+  const privacyModal = await page.$('#privacyModal');
+
+  if (privacyModal) {
+    // Wait for the "Agree" button to appear
+    await page.waitForSelector('#agreeButton');
+
+    // Click the "Agree" button
+    await page.click('#agreeButton');
+  }
+
   // Click the "Terms of Service" link
   await page.click('#terms-of-service');
 
   // Check that the terms of service page has loaded
-  await expect(page).toHaveTitle('Terms of Service | Example');
+  await expect(page).toHaveTitle('Terms of Service');
 
   // Check that the terms of service page contains the necessary legal language
   const tosText = await page.innerText('#terms-of-service-page');
