@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test:lighthouse": "lighthouse http://localhost:3000 --output html --output-path lighthouse-report.html",
+    "test:lighthouse": "lighthouse http://localhost:3000 --output html --output-path lighthouse-report.html --view",
     "test": "npx standard && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/NJIT-WIS/mywebclass#readme",
   "devDependencies": {
-    "@playwright/test": "1.32.0",
     "@axe-core/playwright": "4.6.0",
+    "@playwright/test": "1.32.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "bootstrap": "^5.2.3",
@@ -48,8 +48,10 @@
     "image-webpack-loader": "^8.1.0",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "lighthouse": "^10.1.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-fetch": "3.3.1",
+    "playwright": "^1.32.0",
     "postcss-loader": "^7.0.2",
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
