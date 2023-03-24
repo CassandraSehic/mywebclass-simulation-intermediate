@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Run Playwright test
-        uses: microsoft/playwright-github-action@v1.8.2
+        uses: microsoft/playwright-github-action
         with:
           browser: chromium
           test: tests/qa/codeql.test.js
