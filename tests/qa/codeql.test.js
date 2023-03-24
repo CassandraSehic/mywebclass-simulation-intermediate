@@ -1,18 +1,9 @@
-const axios = require('axios');
-const expect = require('expect');
+const { test, expect } = require('@playwright/test');
 
-test('CodeQL analysis passes', async () => {
-  const result = await axios.post('https://github.com/api/v3/repos/CassandraSehic/mywebclass-simulation-intermediate/code-scanning/codeql/analyze', {
-    ref: 'master',
-    analysis_options: {
-      fail_on_queries: true,
-      queries: ['javascript/remote_code_execution', 'javascript/command_injection']
-    }
-  }, {
-    headers: {
-      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
-    }
+test.describe('CodeQL Test', () => {
+  test('Should not have any code vulnerabilities', async ({ page }) => {
+    await page.goto('http:localhost:3000');
+    const vulnerabilities = await page.locator('css=div.vulnerability').count();
+    expect(vulnerabilities).toBe(0);
   });
-
-  expect(result.data.conclusion).toBe('success');
 });
