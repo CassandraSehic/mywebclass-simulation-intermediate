@@ -12,6 +12,6 @@ Automate QA Playwright Tests| 2| [Link](https://github.com/users/CassandraSehic/
 Implement 3 different CSS frameworks in different branches| 8| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/13)| Open| Julian| 2023-03-17| 2023-03-19| Feature| |
 Develop Responsive Content| 8| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/14)| Open| Julian| 2023-03-17| | Feature| |
 Test the Performance of the 3 frameworks compared to next.js | 3| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/15)| Open| Julian| 2023-03-17| | Feature| |
-Add lorem ipsum terms of service to pass tos test. | 2| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/19)| Open| Cassandra| 2023-03-23| | Feature| |
-Add cookie banner | 2| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/20)| Open| Cassandra| 2023-03-23| | Feature| |
-Increase heading accessibility | 1| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/21)| Open| Cassandra| 2023-03-23| | Feature| |
+Add lorem ipsum terms of service to pass tos test. | 2| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/19)| Open| Cassandra| 2023-03-23| 2023-03-23| Feature| |
+Add cookie banner | 2| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/20)| Open| Cassandra| 2023-03-23| 2023-03-23| Feature| |
+Increase heading accessibility | 1| [Link](https://github.com/CassandraSehic/mywebclass-simulation-intermediate/issues/21)| Open| Cassandra| 2023-03-23|2023-03-23 | Feature| |
