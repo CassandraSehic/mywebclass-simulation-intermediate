@@ -11,7 +11,8 @@
     "test": "npx standard && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
-    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
+    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
+    "test:report": "playwright test --reporter=list --output=test-results/"
   },
   "standard": {
     "ignore": [
