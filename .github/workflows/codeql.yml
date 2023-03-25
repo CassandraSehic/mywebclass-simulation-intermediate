@@ -22,12 +22,11 @@ jobs:
           npx playwright install chromium
 
       - name: Run Playwright test
-        run: |
-          npx playwright test tests/qa/codeql.test.js --reporter=line --output=test-results/
+        run: npx playwright test tests/qa/codeql.test.js
 
-      - name: Upload report as artifact
-        uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
+        if: always()
         with:
           name: playwright-report
-          path: test-results/
-
+          path: playwright-report/
+          retention-days: 30
