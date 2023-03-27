@@ -1,0 +1,30 @@
+name: Webpack Analyzer Bundle
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '17.x'
+
+      - name: Install Dependencies
+        run:  npm install
+
+      - name: Run Tests
+        run: npx webpack
+
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: bundle-report
+          path: ./dist/report.html
+          retention-days: 30
