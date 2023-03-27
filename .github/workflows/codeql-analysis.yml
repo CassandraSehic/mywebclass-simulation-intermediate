@@ -68,8 +68,9 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+        sarif_file: results.sarif
         
     - uses: github/codeql-action/upload-sarif@v2
       with:
         # Path to SARIF file relative to the root of the repository
-        sarif_file: results/javascript.sarif
+        sarif_file: results.sarif
