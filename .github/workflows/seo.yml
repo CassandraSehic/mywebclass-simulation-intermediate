@@ -34,6 +34,8 @@ jobs:
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
+        if: always()
         with:
-          name: Lighthouse report
-          path: seo-report/
+          name: playwright-report
+          path: test-results/
+          retention-days: 30
