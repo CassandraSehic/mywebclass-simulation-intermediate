@@ -27,13 +27,11 @@ jobs:
         run: npm run start & npx wait-on http://localhost:3000
 
       - name: Run Tests
-        run: npx playwright test tests/seo
+        run: |
+          npx playwright test tests/seo
+          npm run test:lighthouse
 
-      - name: Generate Lighthouse Report
-        run: npm run test:lighthouse
-
-      - name: Upload report, screenshots and videos of failed tests
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: test-results
