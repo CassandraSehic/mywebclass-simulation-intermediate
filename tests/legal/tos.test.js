@@ -1,3 +1,4 @@
+/* eslint-disable no-undef,  no-unused-vars */
 const { test, expect } = require('@playwright/test');
 
 test('Terms of Service Test', async ({ page }) => {

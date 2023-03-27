@@ -1,17 +1,17 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const fs = require('fs')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
 
 // Look for .html files
-const htmlFiles = []
-const directories = ['src']
+const htmlFiles = [];
+const directories = ['src'];
 while (directories.length > 0) {
-  const directory = directories.pop()
+  const directory = directories.pop();
   const dirContents = fs.readdirSync(directory)
-    .map(file => path.join(directory, file))
+    .map(file => path.join(directory, file));
 
-  htmlFiles.push(...dirContents.filter(file => file.endsWith('.html')))
-  directories.push(...dirContents.filter(file => fs.statSync(file).isDirectory()))
+  htmlFiles.push(...dirContents.filter(file => file.endsWith('.html')));
+  directories.push(...dirContents.filter(file => fs.statSync(file).isDirectory()));
 }
 
 module.exports = {
@@ -96,4 +96,4 @@ module.exports = {
       }]
   }
 
-}
+};

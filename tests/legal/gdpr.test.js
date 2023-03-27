@@ -1,3 +1,4 @@
+/* eslint-disable no-undef,  no-unused-vars */
 const { test, expect } = require('@playwright/test');
 
 test('GDPR Compliance Test', async ({ page }) => {
@@ -15,11 +16,9 @@ test('GDPR Compliance Test', async ({ page }) => {
     await page.click('#agreeButton');
   }
 
-
   // Check that the cookie banner provides a clear and concise explanation of the use of cookies
   const cookieBannerText = await page.innerText('#cookie-banner');
   const hasClearExplanation = cookieBannerText.includes('This website uses cookies to improve your experience.');
-  
 
   // Check that the cookie banner provides an option to opt out of cookies
   const optOutButton = await page.$('#cookie-banner button[data-cookie-type="opt-out"]');
@@ -30,5 +29,4 @@ test('GDPR Compliance Test', async ({ page }) => {
   await page.goto('https://www.example.com/page-that-requires-cookies');
   const pageContent = await page.innerText('body');
   const hasCookiePrompt = pageContent.includes('Please enable cookies to use this website.');
-  
 });

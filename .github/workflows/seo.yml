@@ -1,4 +1,4 @@
-name: SEO Tests
+name: SEO Tests, LoadTime, Best Practices, FCP, TTI, TBT, CLS
 
 on:
   workflow_dispatch:
@@ -36,4 +36,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Lighthouse report
-          path: lighthouse-report.html
+          path: seo-report/

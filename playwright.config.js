@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test')
+const { defineConfig, devices } = require('@playwright/test');
 
 /**
  * Read environment variables from file.
@@ -79,4 +79,4 @@ module.exports = defineConfig({
     port: 3000,
     reuseExistingServer: true
   }
-})
+});
